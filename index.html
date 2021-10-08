@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebulae</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+        <ul>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Links</a></li>
+        </ul>
+    </header>
+    <div id="spaceship">
+        <img src="./images/spaceship.png" style="width: 100px;" alt="spaceship logo">
+    </div>
+    <div id="starship">
+        <img src="./images/starship.png" style="width: 300px;" alt="spaceship logo">
+    </div>
+    <div class="img1">
+      <div class="text1">Nebulae</div>
+    </div>
+    <section>
+      <p>
+        A nebula is a giant cloud of dust and gas in space. Some nebulae (more
+        than one nebula) come from the gas and dust thrown out by the explosion
+        of a dying star, such as a supernova. Other nebulae are regions where
+        new stars are beginning to form.
+      </p>
+    </section>
+    <div class="img2">
+      <div class="text2">Star-forming Nebulae</div>
+    </div>
+    <section>
+      <p>
+        Star-forming regions are a class of emission nebula associated with
+        giant molecular clouds. These form as a molecular cloud collapses under
+        its own weight, producing stars. Massive stars may form in the center,
+        and their ultraviolet radiation ionizes the surrounding gas, making it
+        visible at optical wavelengths. The region of ionized hydrogen
+        surrounding the massive stars is known as an H II region while the
+        shells of neutral hydrogen surrounding the H II region are known as
+        photodissociation region. Examples of star-forming regions are the Orion
+        Nebula, the Rosette Nebula and the Omega Nebula. Feedback from
+        star-formation, in the form of supernova explosions of massive stars,
+        stellar winds or ultraviolet radiation from massive stars, or outflows
+        from low-mass stars may disrupt the cloud, destroying the nebula after
+        several million years.
+      </p>
+    </section>
+    <div class="img3">
+      <div class="text3">Remnants of Supernova Explosion</div>
+    </div>
+    <section>
+      <p>
+        Other nebulae form as the result of supernova explosions; the death
+        throes of massive, short-lived stars. The materials thrown off from the
+        supernova explosion are then ionized by the energy and the compact
+        object that its core produces. One of the best examples of this is the
+        Crab Nebula, in Taurus. The supernova event was recorded in the year
+        1054 and is labeled SN 1054. The compact object that was created after
+        the explosion lies in the center of the Crab Nebula and its core is now
+        a neutron star.
+      </p>
+    </section>
+    <div class="img4">
+      <div class="text4">Planetary Nebulae</div>
+    </div>
+    <section>
+      <p>
+        Still other nebulae form as planetary nebulae. This is the final stage
+        of a low-mass star's life, like Earth's Sun. Stars with a mass up to
+        8–10 solar masses evolve into red giants and slowly lose their outer
+        layers during pulsations in their atmospheres. When a star has lost
+        enough material, its temperature increases and the ultraviolet radiation
+        it emits can ionize the surrounding nebula that it has thrown off. Our
+        Sun will produce a planetary nebula and its core will remain behind in
+        the form of a white dwarf.
+      </p>
+    </section>
+    <div class="img5">
+      <div class="text5">
+        The Brightest Nebulae In The Sky:
+        <span>Orion Nebulae</span>
+      </div>
+    </div>
+
+    <script>
+        let spaceship = document.getElementById('spaceship');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            spaceship.style.bottom = value * 0.25 + 'px';
+            spaceship.style.right = value * 0.25 + 'px';
+        })
+        let starship = document.getElementById('starship');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            starship.style.left = value * 0.25 + 'px';
+        })
+    </script>
+
+  </body>
+</html>

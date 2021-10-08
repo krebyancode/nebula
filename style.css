@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+.header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 15px;
+}
+
+ul li a{
+    color: rgb(255, 255, 94);
+    font-size: 1.5em;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#spaceship{
+    transform: rotate(-30deg);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#starship{
+    position: fixed;
+    left: 0;
+    top: 15%;
+    z-index: 1000;
+}
+
+div.img1, .img2, .img3, .img4,.img5 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+div.img1{
+    background-image: url(./images/eagle\ nebula.jpg);
+}
+
+div.img2{
+    background-image: url(./images/rosetta\ nebula.jpg);
+}
+div.img3{
+    background-image: url(./images/crab\ nebula.jpg);
+}
+
+div.img4{
+    background-image: url(./images/cats\ eye\ nebula.jpg);
+}
+
+div.img5{
+    background-image: url(./images/orion\ nebula.jpg);
+}
+
+div.text1, .text2, .text3, .text4, .text5{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+div.text1{
+    font-size: 5.0rem;
+    color: rgb(255, 255, 94);
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+div.text2{
+    font-size: 3.0rem;
+    color: rgb(255, 255, 94);
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+div.text3{
+    font-size: 3.0rem;
+    color: black;
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+div.text4{
+    font-size: 3.0rem;
+    color: black;
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+div.text5{
+    font-size: 3.0rem;
+    color: rgb(255, 255, 94);
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+span{
+    display: block;
+    color: black;
+    opacity: 0.8;
+    text-shadow: 10px 10px 15px rgb(255, 255, 94);
+}
+
+section{
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    background: linear-gradient(rgb(189, 186, 186), rgb(90, 87, 87), lightgray);
+    color: rgb(245, 245, 245);
+    opacity: 0.6;
+    text-align: center;
+    font-size: 1.5em;
+}
